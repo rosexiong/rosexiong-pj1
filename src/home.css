@@ -1,0 +1,105 @@
+nav{
+    background-color: #ffba57;
+    border: 7px solid #ff5857;
+    border-radius: 5px;
+    height: 80px;
+}
+nav>a{
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+    margin-left: 50px;
+    vertical-align: top;
+
+}
+nav>image{
+    position: relative;
+}
+#home{
+    background-color: rgba(255,246,190,0.79);
+}
+.dorp{
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 50px;
+    vertical-align: top;
+
+}
+.dorp_con{
+    background-color: #ffba57;
+    cursor: pointer;
+    z-index: 999;
+}
+.dorp_con>a{
+    text-decoration: none;
+    color: white;
+}
+#bigpic{
+width: 800px;
+    height: 600px;
+    position: relative;
+    top: 30px;
+    left: 350px;
+    background-color: #ffba57;
+    border: 7px solid #ff5857;
+    border-radius: 5px;
+}
+#house{
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+.grass{
+    background-color: #22b39f;
+}
+body{
+    background-color: #22b39f;
+}
+
+.hello{
+    background-color: #ffba57;
+    border: 7px solid #ff5857;
+    border-radius: 5px;
+    height: 100px;
+}
+#groupall{
+margin-left: 190px;
+    margin-top: 30px;
+}
+.hello1{
+   margin: 10px;
+    border-radius: 5px;
+}
+.lw{
+    font-weight: lighter;
+    font-size: smaller;
+   color: #686868;
+}
+footer{
+    background-color: #ffba57;
+    border: 7px solid #ff5857;
+    border-radius: 5px;
+    height:200px;
+    width: 100%;
+}
+#test,#test1{
+    position: relative;
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.6em 1.8em 0.9em;
+    border: none;
+    background-color: #FFBA57;
+    font-family: monospace;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222;
+    box-shadow: inset 0.1em -0.2em 0 4px #FF5857, inset -0.1em -0.2em 0 4px #FF5857, inset 0.08em -0.18em 0 5px #bd0100, inset -0.08em -0.18em 0 5px #bd0100, 0 0.25em 0 0.15em rgba(0, 0, 0, 0.2);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    transition: all 90ms ease-in-out;
+}

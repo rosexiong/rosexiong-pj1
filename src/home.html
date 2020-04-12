@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        .dorp{
+            position: relative;
+            display: inline-block;
+        }
+        .dorp_con{
+            display: none;
+           position: absolute;
+        }
+        .dorp:hover .dorp_con{display: block}
+        .FourLeafCloverZCTopBtn{
+            bottom: 5px;
+            right: 5px;
+            position:fixed;
+        }
+        #light:hover{background-color: rgba(255,255,125,0.79)}
+        .dorp_con>a:hover{
+            background-color: rgba(255,255,125,0.79);
+        }
+    </style>
+<link href="home.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <img src="../travel-images/timg.jpg" height="80" width="102.4" />
+    <a id="home" href="home.html">首页</a>
+    <a href="browser.html">浏览</a>
+    <a href="search.html">搜索</a>
+    <div class="dorp">
+        <span id="light">个人中心</span>
+        <div class="dorp_con">
+            <a href="upload.html">👆上传</a><br>
+            <a href="my%20photo.html">我的照片</a><br>
+            <a href="myfavourite.html">我的收藏</a><br>
+            <a href="login.html">🧗‍登入</a>
+        </div>
+    </div>
+</nav>
+<div id="bigpic">
+    <img id="house" src="../travel-images/normal/medium/5855729828.jpg" height="550" width="733"/></div>
+<article>
+<table id="groupall" cellspacing="30px">
+    <tr>
+        <th class="hello">
+            <a href="details.html"><img  class="hello1" src="../travel-images/normal/small/9494282329.jpg" height="240" width="320"/></a><br>
+        <span>Title</span><br><span class="lw">This is my first photograph</span>
+        </th>
+        <th class="hello"><a href="details.html"><img class="hello1"src="../travel-images/normal/small/8710247776.jpg" height="240" width="320"/></a><br><span>Title</span><br><span class="lw">This is my first photograph</span></th>
+        <th class="hello"><a href="details.html"><img class="hello1"src="../travel-images/normal/small/9498386718.jpg" height="240" width="320"/></a><br><span>Title</span><br><span class="lw">This is my first photograph</span></th>
+    </tr>
+    <tr>
+        <th class="hello"><a href="details.html"><img class="hello1"src="../travel-images/normal/small/6115603234_.jpg" height="240" width="320"/></a><br><span>Title</span><br><span class="lw">This is my first photograph</span></th>
+        <th class="hello"><a href="details.html"><img class="hello1"src="../travel-images/normal/small/9494282329.jpg" height="240" width="320"/></a><br><span>Title</span><br><span class="lw">This is my first photograph</span></th>
+        <th class="hello"><a href="details.html"><img class="hello1"src="../travel-images/normal/small/9494464567.jpg" height="240" width="320"/></a><br><span>Title</span><br><span class="lw">This is my first photograph</span></th>
+    </tr>
+    <tr>
+        <th class="hello"><a href="details.html"><img class="hello1"src="../travel-images/normal/small/6119130918.jpg" height="240" width="320"/></a><br><span>Title</span><br><span class="lw">This is my first photograph</span></th>
+        <th class="hello"><a href="details.html"><img class="hello1"src="../travel-images/normal/small/5857298322.jpg" height="240" width="320"/></a><br><span>Title</span><br><span class="lw">This is my first photograph</span></th>
+        <th class="hello"><a href="details.html"><img class="hello1"src="../travel-images/normal/small/9498386718.jpg" height="240" width="320"/></a><br><span>Title</span><br><span class="lw">This is my first photograph</span></th>
+    </tr>
+</table>
+</article>
+</div>
+<button id="test" style="position:fixed;right:0;bottom:0">回到顶部</button>
+<button id="test1"  style="position:fixed;right:0;bottom:60px" onclick="alert('已刷新')">刷新</button>
+<script>
+    test.onclick = function(){
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
+</script>
+<footer>
+    <table cellspacing="20px">
+        <tr><td>关于我们</td><td>联系方式</td></tr>
+        <tr><td>使用条款</td><td>隐私保护</td></tr>
+    </table>
+</footer>
+</body>
+</html>

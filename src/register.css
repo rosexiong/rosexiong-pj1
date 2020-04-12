@@ -1,0 +1,79 @@
+body{
+    background-color: #ffff7d;
+}
+#title{
+    font-size: 200px;
+    font-family: FontAwesome;
+    font-weight: bolder;
+    position: absolute;
+    top: 0;
+    margin: 0;
+}
+#frame{
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    left:900px;
+    top: 100px;
+    margin: 0.5rem 0;
+    padding: 0.6em 1.8em 0.9em;
+    border: none;
+    background-color: #FFBA57;
+    font-family: monospace;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222;
+    box-shadow: inset 0.1em -0.2em 0 4px #FF5857, inset -0.1em -0.2em 0 4px #FF5857, inset 0.08em -0.18em 0 5px #bd0100, inset -0.08em -0.18em 0 5px #bd0100, 0 0.25em 0 0.15em rgba(0, 0, 0, 0.2);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    transition: all 90ms ease-in-out;
+}
+#loginp{
+    position: absolute;
+    left:600px;
+    top: 230px;
+}
+.hi{
+    border: 7px solid #ff5857;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+#frame>p{
+    font-weight: bolder;
+    font-family: 幼圆;
+}
+#butt{
+    background-color: #4ad2cb;
+    border: 7px solid #64a8ff;
+    border-radius: 5px;
+    color: #686868;
+    font-weight: bolder;
+    width: 200px;
+    font-size: x-large;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#smalltitle{
+    font-size: 50px;
+    font-family: FontAwesome;
+    font-weight: bolder;
+    position: absolute;
+    left: 900px;
+    top:20px;
+    margin: 0;
+}
+#123{
+    display: block;
+    position:absolute;
+    left: 0;
+    top: 600px;
+}
+#md{
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <style>
+        .dorp{
+            position: relative;
+            display: inline-block;
+        }
+        .dorp_con{
+            display: none;
+            position: absolute;
+        }
+        .dorp:hover .dorp_con{display: block}
+        .FourLeafCloverZCTopBtn{
+            bottom: 5px;
+            right: 5px;
+            position:fixed;
+        }
+        #light:hover{background-color: rgba(255,255,125,0.79)}
+        .dorp_con>a:hover{
+            background-color: rgba(255,255,125,0.79);
+        }
+    </style>
+    <link href="upload.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <img src="../travel-images/timg.jpg" height="80" width="102.4" />
+    <a id="home" href="">首页</a>
+    <a href="browser.html">浏览</a>
+    <a href="search.html">搜索</a>
+    <div class="dorp">
+        <span id="light">个人中心</span>
+        <div class="dorp_con">
+            <a href="upload.html">👆上传</a><br>
+            <a href="my%20photo.html">我的照片</a><br>
+            <a href="myfavourite.html">我的收藏</a><br>
+            <a href="login.html">🧗‍登入</a>
+        </div>
+    </div>
+</nav>
+<table  class="tr1" cellspacing="0">
+    <tr><td class="h11" id="qq1">&nbsp;upload</td></tr>
+    <tr><td>
+        <div id="upper">
+            <img id="portrait" src="" style="display:none;" />
+            <div id="hello">
+                Upload
+                <input id="hello1" type="file" name="file" onchange="showPreview(this)" />
+            </div>
+        </div>
+    </td></tr>
+    <tr><td class="h11">&nbsp;
+        <table>
+            <tr><td><span>图片标题</span><br>
+            <input class="mm">
+            </td></tr>
+            <tr><td><span>图片描述</span><br>
+                <input class="mm1">
+            </td></tr>
+            <tr><td><span>拍摄国家</span><br>
+                <input class="mm">
+            </td></tr>
+            <tr><td><span>拍摄城市</span><br>
+                <input class="mm">
+            </td></tr>
+            <tr><td><a href="my%20photo.html"><input type="submit"  id="filter" value="upload" name="search"></a></p></td></tr>
+        </table>
+    </td></tr>
+</table>
+</body>
+<footer>licenced by RoseXiong</footer>
+</html>
+<script type="text/javascript">
+    function showPreview(source) {
+        var file = source.files[0];
+        if(window.FileReader) {
+            var fr = new FileReader();
+            console.log(fr);
+            var portrait = document.getElementById('portrait');
+            fr.onloadend = function(e) {
+                portrait.src = e.target.result;
+            };
+            fr.readAsDataURL(file);
+            portrait.style.display = 'block';
+        }
+    }
+</script>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>browser</title>
+    <style>
+        .dorp{
+            position: relative;
+            display: inline-block;
+        }
+        .dorp_con{
+            display: none;
+            position: absolute;
+        }
+        .dorp:hover .dorp_con{display: block}
+        .FourLeafCloverZCTopBtn{
+            bottom: 5px;
+            right: 5px;
+            position:fixed;
+        }
+        #light:hover{background-color: rgba(255,255,125,0.79)}
+        .dorp_con>a:hover{
+            background-color: rgba(255,255,125,0.79);
+        }
+    </style>
+</head>
+<script>
+    var cityArr = [];
+    cityArr['China'] =
+        [
+            {txt:'Shanghai', val:'Shanghai'},
+            {txt:'Kunming', val:'Kunming'},
+            {txt:'Beijing', val:'Beijing'},
+            {txt:'Yantai', val:'Yantai'},
+
+        ];
+    cityArr['Japan'] =
+        [
+            {txt:'Tokyo', val:'Tokyo'},
+            {txt:'Osaka', val:'Osaka'},
+            {txt:'Kamakura', val:'Kamakura'},
+
+        ];
+    cityArr['Italy'] =
+        [
+            {txt:'Roma', val:'Roma'},
+            {txt:'Milan', val:'Milan'},
+            {txt:'Venice', val:'Venice'},
+            {txt:"Florence",val:"Florence"}
+
+        ];
+    cityArr['America'] =
+        [
+            {txt:'New York', val:'New York'},
+            {txt:'San Francisco', val:'San Francisco'},
+            {txt:'Washington', val:'Washington'},
+
+        ];
+
+    function setSelectOption(selectObj, optionList, firstOption, selected) {
+
+    }
+
+    function setCity(province) {
+        console.log(province);
+        //setSelectOption('city', cityArr[province], '-请选择-');
+        var city = document.getElementById('city');
+        var city_len = city.options.length;
+        console.log(city_len);
+        for(var i = 0; i < city_len; i++) {
+            if(city_len > 0) {
+                city.options.remove(0);
+            }
+        }
+
+        if(province == "0") {
+            var opt = new Option('-请选择-', 0);
+            city.options.add(opt);
+        }
+        else {
+            var province_len = cityArr[province].length;
+            for(i = 0;i< province_len; i++) {
+                var opt = new Option(cityArr[province][i].txt, cityArr[province][i].val);
+                city.options.add(opt);
+            }
+        }
+    }
+</script>
+<link href="browser.css" rel="stylesheet">
+<body>
+<nav>
+    <img src="../travel-images/timg.jpg" height="80" width="102.4" />
+    <a  id="home"href="">首页</a>
+    <a href="browser.html">浏览</a>
+    <a href="search.html">搜索</a>
+    <div class="dorp">
+        <span  id="light">个人中心</span>
+        <div class="dorp_con">
+            <a href="upload.html">👆上传</a><br>
+            <a href="my%20photo.html">我的照片</a><br>
+            <a href="myfavourite.html">我的收藏</a><br>
+            <a href="login.html">🧗‍登入</a>
+        </div>
+    </div>
+</nav>
+<aside>
+    <div class="search d1">
+        <table>
+            <tr><span>根据标题搜索</span></tr>
+            <tr>
+                <td ><input type="text" placeholder="请输入" ></td>
+                <td ><button type="submit" onclick="alert('搜索')">🔍</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="d2">
+    <table class="d2_1" >
+        <tr><span>热门国家</span></tr>
+        <tr><td><a href=""onclick="alert('中国')">中国</a></td></tr>
+        <tr><td><a href=""onclick="alert('日本')">日本</a></td></tr>
+        <tr><td><a href=""onclick="alert('摩洛哥')">摩洛哥</a></td></tr>
+        <tr><td><a href=""onclick="alert('法国')">法国</a></td></tr>
+    </table>
+    </div>
+    <div class="d3">
+    <table>
+       <span>热门城市</span>
+        <tr><td><a href=""onclick="alert('温哥华')">温哥华</a></td></tr>
+        <tr><td><a href=""onclick="alert('费城')">费城</a></td></tr>
+        <tr><td><a href=""onclick="alert('夏威夷')">夏威夷</a></td></tr>
+        <tr><td><a href=""onclick="alert('巴塞罗那')">巴塞罗那</a></td></tr>
+    </table>
+    </div>
+</aside>
+    <article class="farm">
+        <span id="shaixuan">筛选</span>
+        <img id="pic" src="../travel-images/timg3.jpg" height="140" width="205.5"/>
+        <img id="pic1" src="../travel-images/timg2.jpg" height="140" width="205.5"/>
+        <form id="form2" name="diqu" method="post" action="">
+            <select name="province" id="province" onchange="
+        if(this.value != '')
+            setCity(this.options[this.selectedIndex].value);">
+                <option value="0">-国家-</option>
+                <option value="China">China</option>
+                <option value="Japan">Japan</option>
+                <option value="Italy">Italy</option>
+                <option value="America">America</option>
+            </select>
+            <select name="city" id="city">
+                <option value="0">-城市-</option>
+            </select>
+            <button type="submit" id="filter" onclick="alert('筛选')">🔍</button>
+        </form>
+    </article>
+<article class="photo">
+<table id="hh" cellspacing="20px">
+    <tr>
+        <td><a href="details.html"><img class="jj" src="../travel-images/normal/medium/222222.jpg" height="640" width="480"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/222223.jpg" height="480" width="640"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5855174537.jpg" height="443" width="640"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5855191275.jpg" height="640" width="480"/></a></td>
+</tr>
+    <tr>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5855209453.jpg" height="428" width="640"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5855213165.jpg" height="360" width="640"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5855221959.jpg" height="640" width="480"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5855729828.jpg" height="480" width="640"/></a></td>
+    </tr>
+    <tr>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5855735700.jpg" height="420" width="640"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5855752464.jpg" height="360" width="640"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5855774224.jpg" height="480" width="640"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5856616479.jpg" height="480" width="640"/></a></td>
+    </tr>
+    <tr>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5856654945.jpg" height="480" width="640"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5856658791.jpg" height="640" width="480"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5856697109.jpg" height="480" width="640"/></a></td>
+        <td><a href="details.html"><img class="jj"src="../travel-images/normal/medium/5857298322.jpg" height="480" width="640"/></a></td>
+    </tr>
+</table>
+    <table id="md" cellspacing="5px">
+    <tr >
+        <td><a href="browser.html">1</a></td>
+        <td><a href="browser.html">2</a></td>
+        <td><a href="browser.html">3</a></td>
+        <td><a href="browser.html">4</a></td>
+        <td><a href="browser.html">5</a></td>
+    </tr>
+</table>
+    <footer id="lalala">licenced by RoseXiong</footer>
+</article>
+</body>
+</html>

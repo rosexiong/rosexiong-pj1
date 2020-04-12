@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="54b485d5-1269-45cf-9a42-c9021f9ebc91" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZZ9ENVSUG9MroTe2RdBJKBeFCR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54b485d5-1269-45cf-9a42-c9021f9ebc91" name="Default Changelist" comment="" />
+      <created>1585035636494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585035636494</updated>
+      <workItem from="1585035638326" duration="3271000" />
+      <workItem from="1585039183102" duration="788000" />
+      <workItem from="1585059618111" duration="3699000" />
+      <workItem from="1585113192215" duration="6661000" />
+      <workItem from="1585139227111" duration="31000" />
+      <workItem from="1585139513701" duration="774000" />
+      <workItem from="1585298915081" duration="3518000" />
+      <workItem from="1585323067881" duration="1023000" />
+      <workItem from="1585411809131" duration="193000" />
+      <workItem from="1585531337881" duration="8000" />
+      <workItem from="1586179057960" duration="13590000" />
+      <workItem from="1586309381114" duration="108000" />
+      <workItem from="1586330085310" duration="6194000" />
+      <workItem from="1586403815707" duration="6997000" />
+      <workItem from="1586416588469" duration="19793000" />
+      <workItem from="1586500136864" duration="2302000" />
+      <workItem from="1586502571213" duration="10332000" />
+      <workItem from="1586519152574" duration="5241000" />
+      <workItem from="1586582741007" duration="11715000" />
+      <workItem from="1586616261560" duration="3043000" />
+      <workItem from="1586679414090" duration="5000" />
+      <workItem from="1586679458198" duration="22000" />
+      <workItem from="1586679869469" duration="1798000" />
+      <workItem from="1586681710900" duration="64000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="533" y="240" key="FileChooserDialogImpl" timestamp="1586180144367">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="533" y="240" key="FileChooserDialogImpl/0.0.1504.963@0.0.1504.963" timestamp="1586180144367" />
+    <state x="449" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1586681710825">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="449" y="310" key="com.intellij.ide.util.TipDialog/0.0.1504.963@0.0.1504.963" timestamp="1586681710825" />
+    <state x="409" y="222" key="run.anything.popup" timestamp="1585123601051">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="409" y="222" key="run.anything.popup/0.0.1504.963@0.0.1504.963" timestamp="1585123601051" />
+    <state x="415" y="206" width="672" height="678" key="search.everywhere.popup" timestamp="1586523405558">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="415" y="206" width="672" height="678" key="search.everywhere.popup/0.0.1504.963@0.0.1504.963" timestamp="1586523405558" />
+  </component>
+</project>
